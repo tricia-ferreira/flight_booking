@@ -1,0 +1,244 @@
+/* general styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #272624;
+  color: #ffffff;
+  font-family: system, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+h2, h5, h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 6em;
+  font-weight: normal;
+}
+
+
+h3 {
+  color: #10a0a7;
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+a {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+a .hover {
+  display: none;
+}
+
+a:hover .active {
+  display: none;
+}
+
+a:hover .hover {
+  display: inline-block;
+}
+/* header styles */
+header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+header .logo img {
+  padding: 3px 0;
+}
+
+header .nav > li > a,
+.dropdown-menu > li > a {
+  border-radius: 2px;
+  color: #ffffff;
+  line-height: 12px;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+
+header nav.main li a {
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+header .nav > li > a:hover,
+.dropdown-menu > li > a:hover {
+  background: #eec933;
+  color: #272624;
+}
+
+nav a.secondary {
+  background: #44423e;
+}
+
+nav a.tertiary {
+  background: #10a0a7;
+  box-shadow: 0 2px #137a7f;
+}
+
+header .navbar-right {
+  margin-right: 0
+}
+
+/* content styles*/
+.content {
+  background-image: url("assets/background.png");
+  background-repeat: no-repeat;
+}
+
+.content .block-one {
+  position: relative;
+  padding: 90px 0;
+}
+
+.content .block-one img {
+  position: absolute;
+}
+
+.content .block-two {
+  background: #272624;
+  padding: 50px 0;
+}
+
+.content .block-two h4 {
+  text-transform: uppercase;
+}
+
+/* cloud positions */
+img.cloud-one {
+  left: 14%;
+  top: 150px;
+}
+
+img.cloud-two {
+  left: 28%;
+  top: 80px;
+}
+
+img.cloud-three {
+  left: 43%;
+  top: 60px;
+}
+
+img.cloud-four {
+  left: 48%;
+  top: 65px;
+}
+
+img.cloud-five {
+  right: 20%;
+  top: 130px;
+}
+
+/* footer styles */
+footer .pagination > li > a,
+footer .pagination > li > span {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0 10px;
+  text-transform: uppercase;
+}
+
+footer .pagination > li > a:hover,
+footer .pagination > li > span:hover {
+  background-color: transparent;
+  color: #eec933;
+}
+
+footer .pagination > li:last-child > a {
+  border-right: 0;
+}
+
+footer .pagination .no-border span,
+footer .pagination .no-border a {
+  border: none;
+}
+
+/* tablet size */
+@media ( max-width: 1200px ) {
+  .logo {
+    text-align: center;
+  }
+
+  img.cloud-one {
+    left: 5%;
+    top: 150px;
+  }
+
+  img.cloud-five {
+    right: 14%;
+    top: 130px;
+  }
+}
+
+@media ( max-width: 991px ) {
+  .main {
+    float: right;
+    margin: 0;
+  }
+
+  img.cloud-one {
+    left: -5%;
+    top: 150px;
+  }
+
+  img.cloud-two {
+    left: 22%;
+    top: 80px;
+  }
+
+  img.cloud-three {
+    left: 40%;
+    top: 60px;
+  }
+
+  img.cloud-four {
+    left: 48%;
+    top: 65px;
+  }
+
+  img.cloud-five {
+    right: 5%;
+    top: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4em
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    background-color: #272624;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 100%;
+  }
+
+  .dropdown-menu > li > a {
+    border-top: 1px solid #10a0a7
+  }
+
+  .logo {
+    text-align: left;
+  }
+
+  .content .block-one img {
+    display: none;
+  }
+}
